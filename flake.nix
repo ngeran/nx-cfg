@@ -28,7 +28,10 @@
 		# NixOs ===[Configuration]===
 		nixosConfigurations.elitedesk = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs system;};
-      modules = [./hosts/elitedesk/configuration.nix];
+      modules = [
+                  ./hosts/elitedesk/configuration.nix
+                   inputs.stylix.nixosModules.stylix
+                ];
 		   };
                   
     # ELITEDESK ===[Workstation]===

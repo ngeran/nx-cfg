@@ -20,6 +20,14 @@
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
+
+    opacity = {
+      applications = 1.0;
+      terminal = 0.8;
+      desktop = 1.0;
+      popup = 1.0;
+    };
+
     targets = {
       neovim.enable = false;
       waybar.enable = false;
