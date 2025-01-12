@@ -1,0 +1,9 @@
+# ignore all logs
+.vscode/
+*.log
+node_modules/
+package-lock.json
+package.json
+.env
+*.sh
+.DS_Store
