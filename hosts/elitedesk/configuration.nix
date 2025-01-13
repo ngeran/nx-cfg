@@ -5,8 +5,13 @@
 { config, pkgs, lib, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
+       # Include NixOS Hαrdware
+       inputs.nixos-hardware.nixosModules.common-gpu-intel
+       inputs.nixos-hardware.nixosModules.common-cpu-intel
+       inputs.nixos-hardware.nixosModules.common-pc-ssd
+
+       # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../common/global/desktop
       ../common/optional/bluetooth.nix
@@ -17,15 +22,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Boot Options
-   boot = {
-    kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
-    binfmt.emulatedSystems = [
-      "aarch64-linux"
-      "i686-linux"
-    ];
-  };
-
   # Define your hostname.
   networking.hostName = "elitedesk"; 
   
@@ -35,8 +31,8 @@
     extraPackages = with pkgs; [
       # your Open GL, Vulkan and VAAPI drivers
       vpl-gpu-rt          # for newer GPUs on NixOS >24.05 or unstable
-#     onevpl-intel-gpu  # for newer GPUs on NixOS <= 24.05
-#     intel-media-sdk   # for older GPUs
+      #onevpl-intel-gpu  # for newer GPUs on NixOS <= 24.05
+      #intel-media-sdk   # for older GPUs
     ];
    };
 
@@ -94,11 +90,13 @@
     # wget
     # git
   ];
-  
+
+  # Power Management 
+  powerManagement.powertop.enable = true;
   # Enable the OpenSSH daemon.
-    services.openssh.enable = true;
-   # Enable zsh 
-   programs.zsh.enable = true;
+  services.openssh.enable = true;
+  # Enable zsh 
+  programs.zsh.enable = true;
 
   system.stateVersion = "24.11"; # Did you read the comment?
   # Enable Flake

@@ -7,12 +7,14 @@
     hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
     nix-colors.url = "github:misterio77/nix-colors"; 
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    # Hyprland 
     hyprland-plugins = {
      url = "github:hyprwm/hyprland-plugins";
      inputs.hyprland.follows = "hyprland";
     };
-
+    # Home Manager 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
