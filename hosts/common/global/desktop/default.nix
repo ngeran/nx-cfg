@@ -3,9 +3,9 @@
     vim
     neovim
     git
-    kitty
+    #kitty
     alacritty
-    fish
+    #fish
     wget
     unzip
     firefox
