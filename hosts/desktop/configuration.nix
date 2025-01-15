@@ -7,9 +7,9 @@
 {
   imports = [
        # Include NixOS Hαrdware
-       inputs.nixos-hardware.nixosModules.common-gpu-amd
-       inputs.nixos-hardware.nixosModules.common-cpu-amd
-       inputs.nixos-hardware.nixosModules.common-pc-ssd
+       #inputs.nixos-hardware.nixosModules.common-gpu-amd
+       #inputs.nixos-hardware.nixosModules.common-cpu-amd
+       #inputs.nixos-hardware.nixosModules.common-pc-ssd
 
        # Include the results of the hardware scan.
       ./hardware-configuration.nix

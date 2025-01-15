@@ -7,7 +7,7 @@
           hyprland.url = "github:hyprwm/Hyprland";
           stylix.url = "github:danth/stylix";
           nix-colors.url = "github:misterio77/nix-colors";
-          hardware.url = "github:nix-systems/nixos-hardware";
+          #hardware.url = "github:nix-systems/nixos-hardware";
          #===[HYPRLAND]===
           hyprland-plugins = {
 	         url = "github:hyprwm/hyprland-plugins";
