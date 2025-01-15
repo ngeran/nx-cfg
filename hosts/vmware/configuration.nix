@@ -1,35 +1,26 @@
 # Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# your system. Help is available in the configuration.nix(5) man page, on
+# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, pkgs, lib, inputs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
-  imports = [
-       # Include NixOS Hαrdware
-       inputs.nixos-hardware.nixosModules.common-gpu-amd
-       inputs.nixos-hardware.nixosModules.common-cpu-amd
-       inputs.nixos-hardware.nixosModules.common-pc-ssd
-
-       # Include the results of the hardware scan.
+  imports =
+    [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      #../../modules/nixos
       ../common/global/desktop
-      ../common/optional/bluetooth.nix
-      ../common/optional/pipewire.nix
     ];
 
-  # Bootloader.
+  # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Define your hostname.
-  networking.hostName = "desktop"; 
+  networking.hostName = "vmware"; 
   
-   # AMD Graphcs
-    hardware.graphics = {
-    enable = true;
-    enable32Bit = true; 
-   };
+  # Set your time zone.
+  time.timeZone = "America/New_York";
 
   # Hyprland Configuration 
   programs.hyprland = {
@@ -79,7 +70,6 @@
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     # vim 
     # wget
@@ -92,8 +82,12 @@
   services.openssh.enable = true;
   # Enable zsh 
   programs.zsh.enable = true;
+  # Enable Flakes 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ]; 
+  # Enable virtualization 
+  virtualisation.vmware.guest.enable = true; 
 
   system.stateVersion = "24.11"; # Did you read the comment?
-  # Enable Flake
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 }
+
