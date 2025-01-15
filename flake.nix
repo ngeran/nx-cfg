@@ -73,7 +73,7 @@
          "nikos@vmware" = lib.homeManagerConfiguration {          
 	                  pkgs = nixpkgs.legacyPackages.${system};
                      extraSpecialArgs = { inherit inputs outputs;};
-                     modules = [ ./hosts/vmware/home.nix ];
+                     modules = [ ./home-manager/vmware.nix ];
                    };
 
          };
