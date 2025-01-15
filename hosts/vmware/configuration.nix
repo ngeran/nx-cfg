@@ -19,8 +19,6 @@
   # Define your hostname.
   networking.hostName = "vmware"; 
   
-  # Set your time zone.
-  time.timeZone = "America/New_York";
 
   # Hyprland Configuration 
   programs.hyprland = {
