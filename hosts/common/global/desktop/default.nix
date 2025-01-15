@@ -3,6 +3,7 @@
     vim
     neovim
     git
+    foot
     #kitty
     alacritty
     #fish
