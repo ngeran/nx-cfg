@@ -68,7 +68,8 @@
 
     iconTheme = {
       enable = true;
-      package = pkgs.papirus-icon-theme;
+      #package = pkgs.papirus-icon-theme;
+      package = pkgs.adwaita-icon-theme;
       dark = "Papirus-Dark";
       light = "Papirus-Light";
     };
