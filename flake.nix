@@ -7,7 +7,7 @@
           hyprland.url = "github:hyprwm/Hyprland";
           stylix.url = "github:danth/stylix";
           nix-colors.url = "github:misterio77/nix-colors";
-          #hardware.url = "github:nix-systems/nixos-hardware";
+          nixos-hardware.url = "github:NixOS/nixos-hardware/master";
          #===[HYPRLAND]===
           hyprland-plugins = {
 	         url = "github:hyprwm/hyprland-plugins";
@@ -21,7 +21,7 @@
 	};
 
 
-	outputs = { self, nixpkgs, home-manager, ...}@inputs:
+	outputs = { self, nixpkgs, home-manager, nixos-hardware, ...}@inputs:
 		let
        inherit (self) outputs;
        lib = nixpkgs.lib // home-manager.lib;

@@ -9,7 +9,7 @@
        # Include NixOS Hαrdware
        #inputs.nixos-hardware.nixosModules.common-gpu-amd
        #inputs.nixos-hardware.nixosModules.common-cpu-amd
-       #inputs.nixos-hardware.nixosModules.common-pc-ssd
+       inputs.nixos-hardware.nixosModules.common-pc-ssd
 
        # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -21,6 +21,8 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.kernelModules = [ "amdgpu" ];
+
 
   # Define your hostname.
   networking.hostName = "desktop"; 
