@@ -12,10 +12,10 @@
        #inputs.nixos-hardware.nixosModules.common-pc-ssd
 
        # Include the results of the hardware scan.
-    #  ./hardware-configuration.nix
-    #  ../common/global/desktop
-    #  ../common/optional/bluetooth.nix
-    #  ../common/optional/pipewire.nix
+      ./hardware-configuration.nix
+      ../common/global/desktop
+      ../common/optional/bluetooth.nix
+      ../common/optional/pipewire.nix
     ];
 
   # Bootloader.
