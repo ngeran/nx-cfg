@@ -16,6 +16,7 @@
     spice-protocol
     win-virtio
     win-spice
+    libvirt
     #gnome.adwaita-icon-theme
   ];
 
