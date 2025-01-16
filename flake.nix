@@ -35,13 +35,13 @@
 		   nixosConfigurations = {
          # ELITEDESK ===[Mini Workstation]===
          elitedesk = lib.nixosSystem {
-                     specialArgs = {inherit inputs system;};
+                     specialArgs = {inherit inputs outputs system;};
                      modules = [./hosts/elitedesk/configuration.nix];
 		              };
 
          # DESKTOP ===[Main Workstation]===
          desktop = lib.nixosSystem {
-                     specialArgs = {inherit inputs system;};
+                     specialArgs = {inherit inputs outputs system;};
                      modules = [./hosts/desktop/configuration.nix];
 		              };
 
