@@ -76,6 +76,7 @@
   users.users.nikos = {
     isNormalUser = true;
     description = "nikos";
+    defaultUserShell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
