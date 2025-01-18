@@ -36,7 +36,7 @@
          # ELITEDESK ===[Mini Workstation]===
          elitedesk = lib.nixosSystem {
                      specialArgs = {inherit inputs outputs system;};
-                     modules = [./hosts/elitedesk/configuration.nix];
+                     modules = [./hosts/elitedesk/configuration.nix inputs.stylix.nixosModules.stylix];
 		              };
 
          # DESKTOP ===[Main Workstation]===
@@ -48,7 +48,7 @@
          # VMWARE===[VMWARE INSTALLATION]===
          vmware = lib.nixosSystem {
                      specialArgs = {inherit inputs outputs system;};
-                     modules = [./hosts/vmware/configuration.nix];
+                     modules = [./hosts/vmware/configuration.nix inputs.stylix.nixosModules.stylix];
                      };
 
       };
