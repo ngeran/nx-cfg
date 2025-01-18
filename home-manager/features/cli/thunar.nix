@@ -1,0 +1,18 @@
+{ pkgs, inputs, ... }: {
+
+    xfce.thunar = {
+        enable = true; 
+
+
+   plugins = with pkgs.xfce; [
+        thunar-archive-plugin
+        thunar-volman
+        ];
+
+    services = [
+        sgvfs.enable = true; # Mount, trash, and other functionalities
+        tumbler.enable = true; # Thumbnail support for images
+        ];
+    };
+}
+    

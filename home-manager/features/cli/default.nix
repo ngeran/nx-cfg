@@ -14,6 +14,7 @@
      ./stylix.nix
      ./tmux.nix
      ./zsh.nix
+     ./thunar.nix
   ];
 }
 
