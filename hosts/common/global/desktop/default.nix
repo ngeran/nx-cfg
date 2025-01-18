@@ -32,5 +32,6 @@
     powertop 
     udiskie
     gvfs 
+    xfconf
   ];                            
 }
