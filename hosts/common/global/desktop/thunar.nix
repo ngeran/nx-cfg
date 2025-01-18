@@ -9,6 +9,8 @@ programs.thunar = {
   ];
 };
  # Optional services for Thunar functionality
-  services.gvfs.enable = true; # Mount, trash, and other functionalities
-  services.tumbler.enable = true; # Thumbnail support for images
+  services = {
+    gvfs.enable = true; # Mount, trash, and other functionalities
+    tumbler.enable = true; # Thumbnail support for images
+  };
 }
