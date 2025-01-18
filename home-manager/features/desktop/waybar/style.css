@@ -49,8 +49,8 @@ window#waybar {
 
 #pulseaudio {
   margin: 0;
-  color: #928374;
-  border-bottom: 5px solid #928374;
+  color: #a89984;
+  border-bottom: 5px solid #a89984;
 }
 
 #pulseaudio.muted {
@@ -67,8 +67,8 @@ window#waybar {
 
 #clock {
   margin: 0;
-  color: #fabd2f;
-  border-bottom: 5px solid #fabd2f;
+  color: #665c54;
+  border-bottom: 5px solid #665c54;
 }
 
 #tray {
