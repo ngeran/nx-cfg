@@ -17,9 +17,10 @@
     hugo                                                                                                                                                                              
     neofetch                                                                                                                                                                          
     btop 
-    font-awesome                                                                                                                                                                            
+    font-awesome  
+    xfce.xfconf                                                                                                                                                                          
     xfce.thunar                                                                                                                                                                       
-    xfce.thunar-volman  
+    xfce.thunar-volman 
     wl-clipboard 
     grim
     slurp
@@ -32,6 +33,5 @@
     powertop 
     udiskie
     gvfs 
-    xfconf
   ];                            
 }
