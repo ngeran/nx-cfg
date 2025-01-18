@@ -1,12 +1,15 @@
 { config, pkgs, lib, inputs, ... }:{
 # Thunar 
-  programs.thunar.enable = true;
-  programs.thunar.plugins = with pkgs.xfce; [
-  thunar-archive-plugin
-  thunar-volman
+programs.thunar = {
+  enable = true;
+
+  plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
   ];
+
+  # Optional services for Thunar functionality
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
-
+};
 }
-    
