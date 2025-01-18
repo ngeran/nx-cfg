@@ -24,16 +24,6 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/mnt/Share2T" =
-    { device = "/dev/disk/by-uuid/1b079941-401f-430f-97e7-8eacd6b25e82";
-      fsType = "ext4";
-    };
-
-  fileSystems."/mnt/Share256" =
-    { device = "/dev/disk/by-uuid/C8057DD5A2F97C72";
-      fsType = "ntfs3";
-    };
-
   swapDevices =
     [ { device = "/dev/disk/by-uuid/db1a5895-ab9c-4bd9-a1b3-ff55e607ae49"; }
     ];
