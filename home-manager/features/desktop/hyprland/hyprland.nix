@@ -28,7 +28,7 @@
         "XDG_SCREENSHOTS_DIR,$HOME/screens"
       ];
 
-      monitor = "DP-1,3440x1440@120,auto,1";
+      monitor = ",2560x1440@120,auto,1";
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "thunar";
