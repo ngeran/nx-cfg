@@ -29,6 +29,8 @@
     openvpn 
     pulseaudio
     pavucontrol                                                                                                                                                                             
-    powertop  
+    powertop 
+    udiskie
+    gvfs 
   ];                            
 }
