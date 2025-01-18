@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }: {
 
-    xfce.thunar = {
+    programs.xfce.thunar = {
         enable = true; 
 
 
