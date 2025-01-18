@@ -7,9 +7,8 @@ programs.thunar = {
     thunar-archive-plugin
     thunar-volman
   ];
-
-  # Optional services for Thunar functionality
+};
+ # Optional services for Thunar functionality
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
-};
 }
