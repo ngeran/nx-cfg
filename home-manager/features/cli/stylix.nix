@@ -76,7 +76,7 @@
      
     # Set Local Background Image
 
-    image = ./home/nikos/Pictures/wallpapers//gruvbox-dark-blue.png;
+    image = ./home/nikos/Pictures/wallpapers/gruvbox-dark-blue.png;
     
     # Set Background Image from the Internet
      #image = pkgs.fetchurl {
