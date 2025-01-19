@@ -80,7 +80,7 @@
     
     # Set Background Image from the Internet
      image = pkgs.fetchurl {
-     url = "https://gruvbox-wallpapers.pages.dev/wallpapers/minimalistic/atoms.png";
+     url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
 
     };
