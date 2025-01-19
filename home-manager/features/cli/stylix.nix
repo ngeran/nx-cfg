@@ -29,6 +29,9 @@
     };
 
     targets = {
+      neovim.enable = true; 
+      firefox.enable = true; 
+      alacritty.enable = true;
       neovim.enable = false;
       waybar.enable = false;
       wofi.enable = false;
