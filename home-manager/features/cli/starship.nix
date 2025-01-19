@@ -8,7 +8,7 @@
       hostname = {
         ssh_only = false;
         format = "[$ssh_symbol$hostname]($style) ";
-        style = "bold purple";
+        style = "bright-red bold";
       };
       character = {
         success_symbol = "[ & ](bold green)";
