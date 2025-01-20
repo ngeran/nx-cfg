@@ -13,7 +13,7 @@
       listenPort = 51820;
 
       # Path to the private key file.
-      privateKeyFile = "./ipvanish/nyc-c26.conf";
+      privateKeyFile = "/etc/ipvanish/nyc-c26.conf";
 
       peers = [{
         # [Peer 0] section -> PublicKey
