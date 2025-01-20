@@ -6,4 +6,5 @@ package-lock.json
 package.json
 .env
 *.sh
+*.conf
 .DS_Store
