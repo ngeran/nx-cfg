@@ -18,6 +18,7 @@
       ../common/optional/bluetooth.nix
       ../common/optional/pipewire.nix
       ../common/optional/qemu.nix
+      ../common/optional/wireguard
     ];
 
   # Bootloader.
