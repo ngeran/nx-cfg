@@ -6,14 +6,14 @@
     wg0 = {
     # Determines the IP/IPv6 address and subnet of the client's end of the tunnel interface
     # IP address of this machine in the *tunnel network*
-      address = [ "100.96.5.249/32" ];
+      address = [ "172.27.200.240/24" ];
     # The port that WireGuard listens to - recommended that this be changed from default
     # To match firewall allowedUDPPorts (without this wg
     # uses random port numbers).
       listenPort = 51820;
 
       # Path to the private key file.
-      privateKeyFile = "/etc/ipvanish/nyc-c26.conf";
+      privateKeyFile = "/home/nikos/github/ngeran/nx-cfg/hosts/common/optional/wireguard/ipvanish/nyc-c26.conf";
 
       peers = [{
         # [Peer 0] section -> PublicKey
