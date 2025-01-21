@@ -19,6 +19,7 @@
     # Coding stuff
     nodejs
     cargo
+    rustc
     gnumake
     hugo 
     code-cursor
