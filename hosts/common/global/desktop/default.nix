@@ -3,7 +3,6 @@
     vim
     neovim
     git
-    foot
     #kitty
     alacritty
     #fish
@@ -11,13 +10,11 @@
     unzip
     firefox
     rofi-wayland
-    wofi                                                                                                                                                    
-    ags                                                                                                                                                                               
+    wofi                                                                                                                                                                                                                                                                                                                                 
     openssh
     hugo                                                                                                                                                                              
     neofetch                                                                                                                                                                          
     btop 
-    font-awesome  
     xfce.xfconf                                                                                                                                                                          
     xfce.thunar                                                                                                                                                                       
     xfce.thunar-volman 
@@ -26,8 +23,7 @@
     slurp
     swappy                                                                                                                                                    
     ags                                                                                                                                                                               
-    networkmanager-openvpn
-    openvpn 
+    wireguard-tools 
     pulseaudio
     pavucontrol                                                                                                                                                                             
     powertop 
