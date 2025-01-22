@@ -7,7 +7,7 @@
   home.homeDirectory = "/home/nikos";
   
   imports = [
-       ./features/cli
+       ./features/cli/vm-default.nix
        ./features/desktop/hyprland
        ./features/desktop/waybar
         inputs.nix-colors.homeManagerModules.default
