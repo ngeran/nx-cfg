@@ -32,6 +32,8 @@
     # Other
     bat
     tailwindcss
+    # VPN 
+    wireguard-tools
   ];
 }
 
