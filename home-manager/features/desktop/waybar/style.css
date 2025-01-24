@@ -67,8 +67,8 @@ window#waybar {
 
 #clock {
   margin: 0;
-  color: #d65d0e;
-  border-bottom: 5px solid #d65d0e;
+  color: #fabd2f;
+  border-bottom: 5px solid #fabd2f;
 }
 
 #tray {
