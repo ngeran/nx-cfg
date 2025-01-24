@@ -55,8 +55,8 @@ window#waybar {
 
 #pulseaudio.muted {
   padding: 0 20px;
-  color: #cc241d;
-  border-bottom: 5px solid #cc241d;
+  color: #83a598;
+  border-bottom: 5px solid #83a598;
 }
 
 #battery {
@@ -67,8 +67,8 @@ window#waybar {
 
 #clock {
   margin: 0;
-  color: #665c54;
-  border-bottom: 5px solid #665c54;
+  color: #d65d0e;
+  border-bottom: 5px solid #d65d0e;
 }
 
 #tray {
