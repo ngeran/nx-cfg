@@ -10,6 +10,7 @@
      krita
      kicad
      dropbox
+     obsidian
    #  logseq 
   #   zathura
      vlc
