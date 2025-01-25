@@ -44,7 +44,7 @@
       primary = true;
       width = 2560;
       height = 1440;
-      refreshRate = 120;
+      refreshRate = 60;
       position = "auto";
       enabled = true;
       workspace = null;
