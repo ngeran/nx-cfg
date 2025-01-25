@@ -27,7 +27,7 @@ in {
           };
           refreshRate = mkOption {
             type = types.int;
-            default = 60;
+            default = 120;
           };
           position = mkOption {
             type = types.str;
