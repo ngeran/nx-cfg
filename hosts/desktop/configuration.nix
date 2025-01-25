@@ -103,7 +103,11 @@
     # git
   ];
 
-   # This overlay is required by LogSeq
+  # This overlay is required by LogSeq
+  nixpkgs.config.permittedInsecurePackages = [
+                "electron-27.3.11"
+              ];
+
   nixpkgs.overlays = [
   (
     final: prev: {
