@@ -10,12 +10,11 @@
      krita
      kicad
      dropbox
-#     logseq has problem with - Electron version 27.3.11 is EOL
+     logseq 
   #   zathura
      vlc
     # CLI utils
     tree
-  #  helix
     # Coding stuff
     nodejs
     cargo
@@ -25,7 +24,6 @@
     code-cursor
     # WM stuff
    libsForQt5.xwaylandvideobridge
-#   libnotify
    xdg-desktop-portal-gtk
    xdg-desktop-portal-hyprland
    xdg-desktop-portal-wlr
