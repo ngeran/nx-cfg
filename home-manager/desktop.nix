@@ -11,6 +11,7 @@
        ./features/desktop/hyprland
        ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
+       ./features/desktop/obsidian
         inputs.nix-colors.homeManagerModules.default
         ];
 
