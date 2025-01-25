@@ -9,6 +9,7 @@
   imports = [
        ./features/cli
        ./features/desktop/hyprland
+       ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
         inputs.nix-colors.homeManagerModules.default
         ];
@@ -34,7 +35,9 @@
   programs.home-manager.enable = true;
 
 
- # Your monitor configuration
+ #  ------   -----   ------
+  # | DP-3 | | DP-1| | DP-2 |
+  #  ------   -----   ------
   monitors = [
     {
       name = "DP-1";
