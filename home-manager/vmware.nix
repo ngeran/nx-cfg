@@ -32,4 +32,21 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  #  ------   -----   ------
+  # | DP-3 | | DP-1| | DP-2 |
+  #  ------   -----   ------
+  monitors = [
+    {
+      name = "DP-1";
+      width = 1920;
+      height = 1080;
+      refreshRate = 60;
+      x = 0; 
+      y = 0; 
+      enabled = true;
+    }
+    # Add more monitors as needed
+  ];
+
 }
