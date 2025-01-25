@@ -10,7 +10,7 @@
      krita
      kicad
      dropbox
-     logseq 
+   #  logseq 
   #   zathura
      vlc
     # CLI utils
