@@ -48,8 +48,6 @@
       x = 0; 
       y = 0; 
       enabled = true;
-      position = "auto";
-      workspace = null;
     }
     # Add more monitors as needed
   ];
