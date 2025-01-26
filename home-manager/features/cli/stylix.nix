@@ -83,7 +83,7 @@
 
      image = pkgs.fetchurl {
      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/src/branch/master/png/gruvbox-dark-blue.png";
-     sha256 = "fa37d3baf975549a1c37e60da74e1854e351d39e065fea7fcb1357cb286c35cb";
+     sha256 = "C6VfQxhkekgI5h/RwSZv7ohG9eWyZfghGvkLMTtr2R4=";
 
     };
   };
