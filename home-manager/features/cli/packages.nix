@@ -12,7 +12,7 @@
      dropbox
      obsidian
    #  logseq 
-     zathura
+     zathura-with-plugins
      vlc
     # CLI utils
     tree
