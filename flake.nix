@@ -50,6 +50,12 @@
                      specialArgs = {inherit inputs outputs system;};
                      modules = [./hosts/vmware/configuration.nix inputs.stylix.nixosModules.stylix];
                      };
+                     
+          # MACBOOK===[MACBOOK INSTALLATION]===
+         macbook = lib.nixosSystem {
+                     specialArgs = {inherit inputs outputs system;};
+                     modules = [./hosts/macbook/configuration.nix inputs.stylix.nixosModules.stylix];
+                     };
 
       };
                   
@@ -74,6 +80,13 @@
 	                  pkgs = nixpkgs.legacyPackages.${system};
                      extraSpecialArgs = { inherit inputs outputs;};
                      modules = [ ./home-manager/vmware.nix ];
+                   };
+
+         #MACBOOK ===[MACBOOK Laptop]===
+         "nikos@macbook" = lib.homeManagerConfiguration {          
+	                  pkgs = nixpkgs.legacyPackages.${system};
+                     extraSpecialArgs = { inherit inputs outputs;};
+                     modules = [ ./home-manager/macbook.nix ];
                    };
 
          };
