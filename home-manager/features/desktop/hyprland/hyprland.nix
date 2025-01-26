@@ -42,7 +42,7 @@
 
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
-      "$fileManager" = "thunar";
+      "$fileManager" = "ranger";
       "$menu" = "rofi";
       "$browser" = "firefox";
 
