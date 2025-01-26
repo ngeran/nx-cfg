@@ -79,8 +79,8 @@
     #image = ./Pictures/wallpapers/gruvbox-dark-blue.png;
     # Set Background Image from the Internet
      image = pkgs.fetchurl {
-     url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-     sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
+     url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/src/branch/master/png/gruvbox-dark-blue.png";
+     sha256 = "+jfTuvl1VJocN+YNp04YVONR054GX+p/yxNXyyhsNcs=";
 
     };
   };
