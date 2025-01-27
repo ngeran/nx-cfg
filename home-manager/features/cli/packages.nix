@@ -12,7 +12,8 @@
      dropbox
      obsidian
    #  logseq 
-     zathura-with-plugins
+    # zathura
+    helix
      vlc
     # CLI utils
     tree
