@@ -9,6 +9,7 @@
   imports = [
        ./features/cli
        ./features/desktop/hyprland
+        ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
         inputs.nix-colors.homeManagerModules.default
         ];
