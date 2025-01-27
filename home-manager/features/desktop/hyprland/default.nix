@@ -1,9 +1,9 @@
 {
   imports = [
     ./binds.nix
-    ./hypridle.nix
+   # ./hypridle.nix
    # ./hyprlock.nix
-   # ./hyprpaper.nix
+    ./hyprpaper.nix
     ./hyprland.nix
   ];
 }
