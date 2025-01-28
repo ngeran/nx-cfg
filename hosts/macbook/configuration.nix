@@ -23,7 +23,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Define your hostname.
-  networking.hostName = "elitedesk"; 
+  networking.hostName = "macbook"; 
   
    # Intel Graphcs
     hardware.graphics = {
