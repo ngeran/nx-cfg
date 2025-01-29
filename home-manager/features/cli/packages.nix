@@ -32,6 +32,8 @@
     # Other
     bat
     tailwindcss
+    #Automation 
+    opentofu
   ];
 }
 
