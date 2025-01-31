@@ -128,8 +128,6 @@
   powerManagement.powertop.enable = true;
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  # Enable zsh 
-  programs.zsh.enable = true;
 
   system.stateVersion = "24.11"; # Did you read the comment?
   # Enable Flake
