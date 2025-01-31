@@ -17,6 +17,7 @@
      vlc
     # CLI utils
     tree
+    kitty
     # Coding stuff
     nodejs
     cargo
