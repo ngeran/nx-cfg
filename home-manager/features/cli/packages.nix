@@ -18,6 +18,7 @@
     # CLI utils
     tree
     kitty
+    bash-completion 
     # Coding stuff
     nodejs
     cargo
