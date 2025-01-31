@@ -6,7 +6,7 @@
     ./starship.nix
     ./stylix.nix
     ./tmux.nix
-    ./zsh.nix
+    #./zsh.nix
     ./bash.nix
     ./alacritty.nix
     ./qt.nix
