@@ -1,7 +1,6 @@
 {
   imports = [
 
-  #   ./fish
      ./alacritty.nix
      ./bash.nix
      ./bat.nix
@@ -13,7 +12,6 @@
      ./starship.nix
      ./stylix.nix
      ./tmux.nix
-     #./zsh.nix
   ];
 }
 
