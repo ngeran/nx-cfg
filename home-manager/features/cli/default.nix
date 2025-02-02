@@ -5,7 +5,6 @@
      ./bash.nix
      ./bat.nix
      ./git.nix
-     ./neovim
      ./packages.nix
      ./qt.nix
      ./ranger.nix
