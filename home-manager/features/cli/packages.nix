@@ -25,7 +25,6 @@
     rustc
     gnumake
     gcc
-    make
     cmake
     hugo 
     code-cursor
