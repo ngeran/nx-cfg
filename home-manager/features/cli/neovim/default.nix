@@ -7,8 +7,8 @@
       nixd
       vimPlugins.nvim-treesitter-parsers.hyprlang
       #Telescope
-      telescope-nvim 
-      telescope-fzf-native-nvim
+      vimPlugins.telescope-nvim 
+      vimPlugins.telescope-fzf-native-nvim
     ];
   };
 }
