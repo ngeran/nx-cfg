@@ -30,5 +30,6 @@
     udiskie
     gvfs 
     ntfs3g
+    telescope
   ];                            
 }
