@@ -15,6 +15,7 @@
       ./hardware-configuration.nix
       ../common/global/desktop
       ../common/global/desktop/thunar.nix
+      ../common/global/neovim
       ../common/optional/bluetooth.nix
       ../common/optional/pipewire.nix
       ../common/optional/qemu.nix
