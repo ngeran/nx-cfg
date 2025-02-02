@@ -6,9 +6,6 @@
       python311Packages.python-lsp-server
       nixd
       vimPlugins.nvim-treesitter-parsers.hyprlang
-      #Telescope
-      vimPlugins.telescope-nvim 
-      vimPlugins.telescope-fzf-native-nvim
     ];
   };
 }

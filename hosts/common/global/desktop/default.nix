@@ -29,5 +29,9 @@
     gvfs 
     ntfs3g
     neovim
+    #Telescope
+    vimPlugins.telescope-nvim 
+    vimPlugins.telescope-fzf-native-nvim
+    
   ];                            
 }
