@@ -26,6 +26,7 @@
     gnumake
     gcc
     cmake
+    fzf
     hugo 
     code-cursor
     # WM stuff
