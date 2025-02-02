@@ -40,7 +40,7 @@
     #Automation 
     opentofu
     #Video 
-    davinci-resolve
+    #davinci-resolve
   ];
 }
 
