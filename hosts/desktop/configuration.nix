@@ -45,7 +45,8 @@
     enable = true;
     enable32Bit = true; 
    };
-
+   # AMD OpenCL 
+  hardware.amdgpu.opencl.enable = true;
 
   # Hyprland Configuration 
   programs.hyprland = {

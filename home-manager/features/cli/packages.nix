@@ -39,6 +39,8 @@
     tailwindcss
     #Automation 
     opentofu
+    #Video 
+    davinci-resolve
   ];
 }
 
