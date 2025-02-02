@@ -24,6 +24,8 @@
     cargo
     rustc
     gnumake
+    gcc
+    cmake
     hugo 
     code-cursor
     # WM stuff
