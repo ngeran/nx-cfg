@@ -6,6 +6,7 @@
     ./completion.nix
     ./keymappings.nix
     ./options.nix
+    ./plugins
   ];
 
    home.shellAliases.v = "nvim";
@@ -20,6 +21,6 @@
     viAlias = true;
     vimAlias = true;
 
-
+    luaLoader.enable = true;
   };
 }
