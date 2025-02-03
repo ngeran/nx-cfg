@@ -12,7 +12,7 @@
        ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
         inputs.nix-colors.homeManagerModules.default
-        nixvim.homeManagerModules.nixvim
+        inputs.nixvim.homeManagerModules.nixvim
         ];
 
   # Color Scheme
