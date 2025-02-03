@@ -1,7 +1,7 @@
 {
   imports = [
     ./fish
-    ./neovim.nix
+    #./neovim.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix

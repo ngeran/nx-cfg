@@ -17,7 +17,6 @@
      vlc
     # CLI utils
     tree
-    kitty
     bash-completion 
     # Coding stuff
     nodejs
@@ -26,8 +25,6 @@
     gnumake
     gcc
     cmake
-    fzf
-    hugo 
     code-cursor
     # WM stuff
    libsForQt5.xwaylandvideobridge
