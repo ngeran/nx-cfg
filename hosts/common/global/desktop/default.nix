@@ -25,6 +25,5 @@
     udiskie
     gvfs 
     ntfs3g
-    
   ];                            
 }

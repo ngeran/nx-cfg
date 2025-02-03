@@ -5,39 +5,35 @@
 
   home.packages = with pkgs; [
 
-    # Desktop apps
+     # Desktop apps
      inkscape-with-extensions
      krita
      kicad
      dropbox
      obsidian
-   #  logseq 
-    # zathura
-    helix
+     helix
      vlc
-    # CLI utils
-    tree
-    bash-completion 
+     # CLI utils
+     tree
+     bash-completion 
     # Coding stuff
-    nodejs
-    cargo
-    rustc
-    gnumake
-    gcc
-    cmake
-    code-cursor
+     nodejs
+     cargo
+     rustc
+     gnumake
+     gcc
+     cmake
+     code-cursor
     # WM stuff
-   libsForQt5.xwaylandvideobridge
-   xdg-desktop-portal-gtk
-   xdg-desktop-portal-hyprland
-   xdg-desktop-portal-wlr
+    libsForQt5.xwaylandvideobridge
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-wlr
     # Other
     bat
     tailwindcss
     #Automation 
     opentofu
-    #Video 
-    #davinci-resolve
   ];
 }
 
