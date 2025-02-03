@@ -5,7 +5,7 @@
 }:
 {
   imports = [
-   
+    inputs.nixvim.homeManagerModules.nixvim
   ];
 
    home.shellAliases.v = "nvim";
