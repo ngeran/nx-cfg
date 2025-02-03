@@ -8,13 +8,18 @@
    
   ];
 
-  programs.nixvim = {
-    
-    colorschemes.gruvbox.enable = true;
+   home.shellAliases.v = "nvim";
 
-    plugins = {
-   
-     
-    };
+  programs.nixvim = {
+    enable = true;
+    defaultEditor = true;
+
+    nixpkgs.useGlobalPackages = true;
+
+  
+    viAlias = true;
+    vimAlias = true;
+
+
   };
 }
