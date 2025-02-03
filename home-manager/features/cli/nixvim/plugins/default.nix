@@ -11,9 +11,11 @@
     ./neo-tree.nix
     ./telescope.nix
     ./treesitter.nix
+    ./markdown-preview.nix
   ];
 
   programs.nixvim = {
+    
     colorschemes.gruvbox.enable = true;
 
     plugins = {

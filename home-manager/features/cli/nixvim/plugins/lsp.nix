@@ -32,6 +32,8 @@
         servers = {
           clangd.enable = true;
           texlab.enable = true;
+          rust-analyzer.enable = true;
+          lua-ls.enable = true; 
         };
       };
     };
