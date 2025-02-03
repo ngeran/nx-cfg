@@ -15,7 +15,7 @@
   ];
 
   programs.nixvim = {
-    
+
     colorschemes.gruvbox.enable = true;
 
     plugins = {
@@ -42,6 +42,10 @@
       oil = {
         enable = true;
         lazyLoad.settings.cmd = "Oil";
+      };
+
+      luasnip = {
+        enable = true;
       };
 
       trim = {
