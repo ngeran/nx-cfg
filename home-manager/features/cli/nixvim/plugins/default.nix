@@ -12,6 +12,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./markdown-preview.nix
+    ./harpoon.nix
   ];
 
   programs.nixvim = {

@@ -32,6 +32,14 @@
         servers = {
           clangd.enable = true;
           texlab.enable = true;
+          nil_ls.enable = true;
+          tsserver.enable = true; 
+
+          rust-analyzer = {
+            enable = true;
+            installCargo = true;
+          };
+
         };
       };
     };
