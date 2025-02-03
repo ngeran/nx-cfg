@@ -32,8 +32,7 @@
         servers = {
           clangd.enable = true;
           texlab.enable = true;
-          nil_ls.enable = true;
-          tsserver.enable = true; 
+          nil_ls.enable = true; 
 
         };
       };
