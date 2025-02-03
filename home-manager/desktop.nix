@@ -8,6 +8,7 @@
   
   imports = [
        ./features/cli
+       ./features/dev
        ./features/desktop/hyprland
        ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
