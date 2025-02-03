@@ -1,5 +1,5 @@
 {
-	description = "Nixos Flake";
+	description = "ngeran Nixos Flake";
 
 
 	inputs = {
@@ -8,7 +8,13 @@
           stylix.url = "github:danth/stylix";
           nix-colors.url = "github:misterio77/nix-colors";
           nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-         #===[HYPRLAND]===
+          
+          #===[NIXVIM]===
+          nixvim = {
+            url = "github:nix-community/nixvim";
+            inputs.nixpkgs.follows = "nixpkgs";
+          };
+          #===[HYPRLAND]===
           hyprland-plugins = {
 	         url = "github:hyprwm/hyprland-plugins";
 	         inputs.hyprland.follows = "hyprland";
