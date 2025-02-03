@@ -35,11 +35,6 @@
           nil_ls.enable = true;
           tsserver.enable = true; 
 
-          rust-analyzer = {
-            enable = true;
-            installCargo = true;
-          };
-
         };
       };
     };
