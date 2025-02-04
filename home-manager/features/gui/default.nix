@@ -2,7 +2,7 @@
 {
   imports = [
     ./flameshot.nix
-    ./zathura.nix
+    #./zathura.nix
   ];
 
 }
