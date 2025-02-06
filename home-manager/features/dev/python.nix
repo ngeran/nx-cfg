@@ -22,6 +22,7 @@
       ))
 
       mypy
+      python39Packages.junos-eznc
     ];
 
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
