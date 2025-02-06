@@ -22,7 +22,6 @@
       ))
 
       mypy
-      junos-eznc
     ];
 
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
@@ -65,8 +64,7 @@
                 jedi_completion.fuzzy = true;
 
                 pylsp_mypy.enabled = true;
-                #Juniper PyEZ library 
-                junos-eznc.enable = true;
+               
                 # We don't need those as ruff is already providing such features.
                 autopep8.enabled = false;
                 flake8.enabled = false;
