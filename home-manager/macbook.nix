@@ -52,7 +52,7 @@
       width = 1920;
       height = 1080;
       refreshRate = 60;
-      x = 0; 
+      x = 1680; 
       y = 0; 
       enabled = true;
     }
