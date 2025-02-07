@@ -5,7 +5,7 @@
   # manage.
   home.username = "nikos";
   home.homeDirectory = "/home/nikos";
-  
+
   imports = [
        ./features/cli
        ./features/desktop/hyprland
@@ -18,8 +18,8 @@
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-hard;
 
   home.stateVersion = "24.11";
-  
-  # Packages 
+
+  # Packages
   home.packages = [
   ];
 
@@ -43,8 +43,8 @@
       width = 1680;
       height = 1050;
       refreshRate = 60;
-      x = 0; 
-      y = 0; 
+      x = 1920;
+      y = 0;
       enabled = true;
     }
      {
@@ -52,8 +52,8 @@
       width = 1920;
       height = 1080;
       refreshRate = 60;
-      x = 1680; 
-      y = 0; 
+      x = 0;
+      y = 0;
       enabled = true;
     }
   ];
