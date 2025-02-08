@@ -60,7 +60,7 @@
               #Launch Oil
               "<leader>o" = ":Oil<CR>";
               #Launch ToggleTerm 
-              "<leader>t" = "ToggleTerm<CR>"
+              "<leader>t" = "ToggleTerm<CR>";
 
             };
         visual =
