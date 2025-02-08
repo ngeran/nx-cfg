@@ -34,6 +34,8 @@
     tailwindcss
     #Automation 
     opentofu
+    #Image 
+    imagemagick
   ];
 }
 
