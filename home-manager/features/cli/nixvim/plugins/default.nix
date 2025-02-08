@@ -14,6 +14,7 @@
     ./markdown-preview.nix
     ./harpoon.nix
     ./toggleterm.nix
+    ./floaterm.nix
   ];
 
   programs.nixvim = {
