@@ -13,7 +13,6 @@
     ./treesitter.nix
     ./markdown-preview.nix
     ./harpoon.nix
-    ./toggleterm.nix
     ./floaterm.nix
   ];
 
