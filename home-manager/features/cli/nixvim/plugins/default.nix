@@ -35,10 +35,10 @@
 
       nvim-autopairs.enable = true;
 
-     # colorizer = {
-     #   enable = true;
-     #   settings.user_default_options.names = false;
-     # };
+      colorizer = {
+        enable = true;
+        settings.user_default_options.names = false;
+      };
 
       oil = {
         enable = true;

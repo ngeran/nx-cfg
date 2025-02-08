@@ -57,6 +57,9 @@
               "<M-j>" = ":move+<CR>";
 
               "<leader>rp" = ":!remi push<CR>";
+              #Launch Oil
+              "<leader>o" = ":Oil<CR>";
+
             };
         visual =
           lib.mapAttrsToList

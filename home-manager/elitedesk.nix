@@ -8,7 +8,10 @@
   
   imports = [
        ./features/cli
+       ./features/dev
+       ./features/gui
        ./features/desktop/hyprland
+       ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
         inputs.nix-colors.homeManagerModules.default
         ];
