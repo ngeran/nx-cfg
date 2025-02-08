@@ -18,10 +18,7 @@
      bash-completion 
     # Coding stuff
      nodejs
-     cargo
-     rustc
      gnumake
-     gcc
      cmake
      code-cursor
     # WM stuff
