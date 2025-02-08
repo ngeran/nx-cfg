@@ -7,6 +7,7 @@
     ./keymappings.nix
     ./options.nix
     ./plugins
+    ./todo.nix
   ];
 
    

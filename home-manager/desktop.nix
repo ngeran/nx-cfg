@@ -10,6 +10,7 @@
        ./features/cli
        ./features/dev
        ./features/gui
+       ./features/tui
        ./features/desktop/hyprland
        ./features/desktop/hyprland/monitors.nix
        ./features/desktop/waybar
