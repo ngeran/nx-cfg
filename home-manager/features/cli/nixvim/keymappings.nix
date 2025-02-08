@@ -59,6 +59,8 @@
               "<leader>rp" = ":!remi push<CR>";
               #Launch Oil
               "<leader>o" = ":Oil<CR>";
+              #Launch ToggleTerm 
+              "<leader>t" = "ToggleTerm<CR>"
 
             };
         visual =
