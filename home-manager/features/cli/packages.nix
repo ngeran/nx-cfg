@@ -36,6 +36,8 @@
     opentofu
     #Image 
     imagemagick
+    #browser
+    tor
   ];
 }
 
