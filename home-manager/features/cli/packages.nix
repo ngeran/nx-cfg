@@ -34,7 +34,7 @@
     #Image 
     imagemagick
     #browser
-    tor
+    tor-browser
   ];
 }
 
