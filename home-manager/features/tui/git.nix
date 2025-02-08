@@ -3,12 +3,12 @@
     git = {
       enable = true;
 
-      userEmail = "gaetan@glepage.com";
-      userName = "Gaetan Lepage";
+      userEmail = "ngeran@gmail.com";
+      userName = "ngeran";
 
       extraConfig = {
         core.editor = "nvim";
-        github.user = "GaetanLepage";
+        github.user = "ngeran";
         mergetool.prompt = false;
         pull.rebase = false;
       };
