@@ -1,5 +1,5 @@
-_: {
-  plugins.toggleterm = {
+{
+  programs.nixvim.plugins.toggleterm = {
     enable = true;
     settings = {
       size = 20;
