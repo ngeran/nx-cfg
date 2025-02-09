@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins = {
+  programs.nixvim.plugins = {
     project-nvim.enableTelescope = true;
     telescope = {
       enable = true;
