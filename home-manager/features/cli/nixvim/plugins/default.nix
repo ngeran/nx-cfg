@@ -12,7 +12,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./markdown-preview.nix
-    ./harpoon.nix
+    #./harpoon.nix
     ./floaterm.nix
     ./lazygit.nix
   ];
