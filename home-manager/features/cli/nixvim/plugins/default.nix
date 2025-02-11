@@ -13,8 +13,12 @@
     ./treesitter.nix
     ./markdown-preview.nix
     #./harpoon.nix
+    ./neorg.nix
+    ./startify.nix
+    ./vimtex.nix
     ./floaterm.nix
     ./lazygit.nix
+    ./startify.nix
   ];
 
   programs.nixvim = {
