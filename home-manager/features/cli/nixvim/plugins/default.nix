@@ -21,11 +21,14 @@
     ./startify.nix
   ];
 
-  colorschemes.gruvbox.enable = true;
+
 
   programs.nixvim = {
 
     plugins = {
+
+     colorschemes.gruvbox.enable = true;
+     
       # Lazy loading
       lz-n.enable = true;
 
