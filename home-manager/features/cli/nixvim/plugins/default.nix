@@ -23,7 +23,7 @@
 
   programs.nixvim = {
 
-    colorschemes.gruvbox.enable = true;
+    #colorschemes.gruvbox.enable = true;
 
     plugins = {
       # Lazy loading
