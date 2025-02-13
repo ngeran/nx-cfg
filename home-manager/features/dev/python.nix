@@ -18,6 +18,7 @@
           matplotlib
           numpy
           torch
+          flask
         ]
       ))
 
