@@ -18,11 +18,12 @@
           matplotlib
           numpy
           torch
+          #Jinja2
+          Jinja2
         ]
       ))
-
+      
       mypy
-      python3Packages.Jinja2
       python310Packages.junos-eznc
     ];
 
