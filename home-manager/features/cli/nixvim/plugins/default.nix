@@ -19,6 +19,7 @@
     ./floaterm.nix
     ./lazygit.nix
     ./startify.nix
+    ./noice.nix
   ];
 
   programs.nixvim = {
