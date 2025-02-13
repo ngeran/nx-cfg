@@ -22,7 +22,7 @@
       ))
 
       mypy
-      Jinja2
+      python310Packages.Jinja2
       python310Packages.junos-eznc
     ];
 
