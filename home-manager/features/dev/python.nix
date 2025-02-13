@@ -6,7 +6,10 @@
 {
   home = {
     packages = with pkgs; [
-    (python310.withPackages (ps: with ps; [
+      # Python
+      # inria
+      (python3.withPackages (
+        ps: with ps; [
           # Misc
           pip
           setuptools
@@ -15,8 +18,6 @@
           matplotlib
           numpy
           torch
-          #Jinja2
-           ps.Jinja2
         ]
       ))
 
