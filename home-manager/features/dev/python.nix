@@ -18,13 +18,13 @@
           matplotlib
           numpy
           torch
-          # Add Jinja2
-          jinja2
         ]
       ))
 
       mypy
       python310Packages.junos-eznc
+       # Add Jinja2
+      python310Packages.jinja2
     ];
 
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
