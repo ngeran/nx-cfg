@@ -18,6 +18,8 @@
           matplotlib
           numpy
           torch
+          # Add Jinja2
+          jinja2
         ]
       ))
 
