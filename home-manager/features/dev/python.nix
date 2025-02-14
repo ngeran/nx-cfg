@@ -24,6 +24,7 @@
 
       mypy
       python310Packages.junos-eznc
+      python310Packages.jnpr-junos
        # Add Jinja2
       python310Packages.jinja2
     ];
