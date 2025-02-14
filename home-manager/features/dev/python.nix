@@ -20,6 +20,7 @@
           torch
           flask
           jinja2
+          pyyaml
         ]
       ))
 
