@@ -20,12 +20,14 @@
           torch
           flask
           jinja2
+
+           # Junos
+          jnpr-junos
         ]
       ))
 
       mypy
       python310Packages.junos-eznc
-      python3Packages.jnpr-junos
     ];
 
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
