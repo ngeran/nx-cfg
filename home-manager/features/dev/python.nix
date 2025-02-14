@@ -19,13 +19,14 @@
           numpy
           torch
           flask
-          jinja2
-          types-jinja2
-          pyyaml
+
         ]
       ))
 
       mypy
+      python3Packages.jinja2
+      python3Packages.types-jinja2
+      python3Packages.pyyaml
       python310Packages.junos-eznc
     ];
 
