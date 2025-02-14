@@ -19,14 +19,13 @@
           numpy
           torch
           flask
+          jinja2
+          jnpr-junos
         ]
       ))
 
       mypy
       python310Packages.junos-eznc
-      python310Packages.jnpr-junos
-       # Add Jinja2
-      python310Packages.jinja2
     ];
 
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
