@@ -19,14 +19,13 @@
           numpy
           torch
           flask
-
+          jinja2
+          types-jinja2
+          pyyaml
         ]
       ))
 
       mypy
-      python3Packages.jinja2
-      python3Packages.types-jinja2
-      python3Packages.pyyaml
       python310Packages.junos-eznc
     ];
 
@@ -71,6 +70,9 @@
 
                 pylsp_mypy.enabled = true;
                 junos-eznc.enable = true;
+                jinja2.enable = true;
+                pyyaml.enable = true;
+                flask.enable = true;
                 # We don't need those as ruff is already providing such features.
                 autopep8.enabled = false;
                 flake8.enabled = false;
