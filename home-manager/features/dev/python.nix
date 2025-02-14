@@ -20,9 +20,6 @@
           torch
           flask
           jinja2
-
-           # Junos
-          jnpr-junos
         ]
       ))
 
