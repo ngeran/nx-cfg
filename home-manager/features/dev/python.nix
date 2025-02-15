@@ -24,14 +24,9 @@
       python310Packages.types-jinja2
     ];
 
-    # Mypy settings (added directly inline)
-    sessionVariables.MYPY_CONFIG = ''
-      [mypy]
-      ignore_missing_imports = True
-    '';
-
     # Mypy cache directory
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
+    
   };
 
   # Program configurations
