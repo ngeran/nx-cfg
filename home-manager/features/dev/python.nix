@@ -6,32 +6,30 @@
 {
   home = {
     packages = with pkgs; [
-      # Python
-      # inria
-      (python3.withPackages (
-        ps: with ps; [
-          # Misc
-          pip
-          setuptools
+      # Python packages
+      (python3.withPackages (ps: with ps; [
+        pip
+        setuptools
+        matplotlib
+        numpy
+        torch
+        flask
+        pyyaml
+      ]))
 
-          # RL
-          matplotlib
-          numpy
-          torch
-          flask
-          jinja2
-          types-jinja2
-          pyyaml
-        ]
-      ))
-
-      mypy
+      # Python tools for development
+      python310Packages.mypy
       python310Packages.junos-eznc
+      python310Packages.jinja2
+      python310Packages.types-jinja2
     ];
 
+    # Mypy cache directory
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
+    
   };
 
+  # Program configurations
   programs = {
     ruff = {
       enable = true;
@@ -67,10 +65,9 @@
             settings = {
               plugins = {
                 jedi_completion.fuzzy = true;
-
                 pylsp_mypy.enabled = true;
                 junos-eznc.enable = true;
-                # We don't need those as ruff is already providing such features.
+                # Disabling redundant linters
                 autopep8.enabled = false;
                 flake8.enabled = false;
                 mccabe.enabled = false;
