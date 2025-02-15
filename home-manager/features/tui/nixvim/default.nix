@@ -5,7 +5,7 @@
     ./autocommands.nix
     ./completion.nix
     ./keymappings.nix
-    #./options.nix
+    ./options.nix
     ./plugins
   ];
 
