@@ -31,7 +31,7 @@
     targets = {
       firefox.enable = true; 
       alacritty.enable = true;
-      neovim.enable = true;
+      neovim.enable = false;
       waybar.enable = false;
       wofi.enable = false;
       hyprland.enable = false;
