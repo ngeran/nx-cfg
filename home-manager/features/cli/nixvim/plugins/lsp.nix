@@ -35,7 +35,8 @@
           nil_ls.enable = true;
           pylsp.enable = true;
           lua_ls.enable = true;
-          pyright.enable = true;
+          mypy.enable = true;
+          #pyright.enable = true;
           tflint.enable = true;
           templ.enable = true;
           html.enable = true;
