@@ -13,15 +13,10 @@
         matplotlib
         numpy
         torch
-        flask
-        pyyaml
       ]))
 
       # Python tools for development
-      python310Packages.mypy
-      python310Packages.junos-eznc
-      python310Packages.jinja2
-      python310Packages.types-jinja2
+      mypy
     ];
 
     # Mypy cache directory

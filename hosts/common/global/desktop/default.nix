@@ -25,5 +25,15 @@
     udiskie
     gvfs 
     ntfs3g
+
+     # Python packages
+    (python310.withPackages (ps: with ps; [
+      jinja2
+      types-jinja2
+      pyyaml
+      flask
+      junos-eznc
+    ]))
+
   ];                            
 }
