@@ -9,7 +9,6 @@
      ./starship.nix
      ./stylix.nix
      ./tmux.nix
-     ./nixvim
   ];
 }
 
