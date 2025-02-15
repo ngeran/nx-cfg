@@ -5,6 +5,8 @@
     settings = {
       width = 0.8;
       height = 0.8;
+      redrawtime = 1000;
+      updatetime = 6000;
       title = "";
       keymap_toggle = "<leader>,";
     };
