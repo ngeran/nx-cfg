@@ -25,6 +25,7 @@
     udiskie
     gvfs 
     ntfs3g
+    basedpyright
 
   ];                            
 }
