@@ -5,6 +5,7 @@
 }:
 {
   imports = [
+     ./barbar.nix
     ./comment.nix
     ./lsp.nix
     ./lualine.nix
@@ -12,15 +13,16 @@
     ./telescope.nix
     ./treesitter.nix
     ./markdown-preview.nix
-    #./harpoon.nix
+    ./harpoon.nix
     ./neorg.nix
     ./startify.nix
     ./vimtex.nix
-    ./toggleterm.nix
+    ./floaterm.nix
     ./lazygit.nix
     ./startify.nix
     ./noice.nix
     ./which-key.nix
+    ./snacks.nix
   ];
 
   programs.nixvim = {
