@@ -3,5 +3,6 @@
     which-key = {
       enable = true;
     };
+    
   };
 }
