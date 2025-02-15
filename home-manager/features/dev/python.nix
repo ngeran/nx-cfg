@@ -15,6 +15,7 @@
         torch
         jinja2
         types-jinja2
+        types-PyYAML
         pyyaml
         flask
         junos-eznc
