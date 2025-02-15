@@ -5,6 +5,7 @@
     ./plugins
     ./completion.nix
     ./autocommands.nix
+    ./keymappings.nix
   ];
 
   programs.nixvim = {

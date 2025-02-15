@@ -11,6 +11,11 @@
     ./lsp.nix
     ./lualine.nix
     ./startify.nix
+    ./neo-tree.nix
+    ./telescope.nix
+    ./neorg.nix
+    ./noice.nix
+    ./treesitter.nix
   ];
 
 
