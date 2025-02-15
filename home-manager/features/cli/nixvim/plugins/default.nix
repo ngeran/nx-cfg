@@ -20,6 +20,7 @@
     ./lazygit.nix
     ./startify.nix
     ./noice.nix
+    ./which-key.nix
   ];
 
   programs.nixvim = {
