@@ -28,6 +28,7 @@
       mypy
       python310Packages.junos-eznc
       python310Packages.jinja2
+      python310Packages.types-jinja2
     ];
 
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
