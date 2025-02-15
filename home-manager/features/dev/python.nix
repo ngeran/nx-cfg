@@ -68,6 +68,7 @@
                 jedi_completion.fuzzy = true;
                 pylsp_mypy.enabled = true;
                 junos-eznc.enable = true;
+                jinja2.enable = true;
                 # Disabling redundant linters
                 autopep8.enabled = false;
                 flake8.enabled = false;
