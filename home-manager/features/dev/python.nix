@@ -33,7 +33,7 @@
    #   [mypy]
    #   ignore_missing_imports = True
    # '';
-  #};
+  };
 
   # Program configurations (LSP, linters, etc.)
   programs = {
