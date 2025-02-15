@@ -4,7 +4,7 @@
       enable = true;
 
       settings = {
-       open_mapping = "[[<C-t>]]";
+       open_mapping = "[[<C-x>]]";
       };
     };
     
