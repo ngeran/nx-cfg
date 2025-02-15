@@ -7,7 +7,7 @@
 {
   imports = [
     ./git.nix
-    #./nixvim
+    ./nixvim
   ];
 
 }
