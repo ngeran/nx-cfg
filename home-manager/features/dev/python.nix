@@ -7,7 +7,7 @@
   home = {
     packages = with pkgs; [
       # Python packages
-      (python3.withPackages (ps: with ps; [
+      (python3.withPackages (pypkgs: with pypkgs; [
         pip
         setuptools
         matplotlib
@@ -18,19 +18,14 @@
         pyyaml
         flask
         junos-eznc
+        # Python tools for development
+        mypy
       ]))
 
-      # Python tools for development
-      mypy
     ];
 
     # Mypy cache directory
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
-
-    env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
-      pkgs.jinja2
-      pkgs.types-jinja2
-    ];
     
   };
 
