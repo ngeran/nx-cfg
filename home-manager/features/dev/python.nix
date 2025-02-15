@@ -26,6 +26,11 @@
 
     # Mypy cache directory
     sessionVariables.MYPY_CACHE_DIR = "${config.xdg.cacheHome}/mypy";
+
+    env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+      pkgs.jinja2
+      pkgs.types-jinja2
+    ];
     
   };
 
