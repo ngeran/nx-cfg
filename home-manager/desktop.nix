@@ -8,7 +8,7 @@
   
   imports = [
        ./features/cli
-       ./features/dev
+       #./features/dev
        ./features/gui
        ./features/tui
        ./features/desktop/hyprland
