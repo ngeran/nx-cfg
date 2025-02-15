@@ -10,6 +10,7 @@
     ./toggleterm.nix
     ./lsp.nix
     ./lualine.nix
+    ./startify.nix
   ];
 
 
