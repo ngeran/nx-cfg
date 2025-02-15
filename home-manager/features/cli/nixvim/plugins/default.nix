@@ -16,7 +16,7 @@
     ./neorg.nix
     ./startify.nix
     ./vimtex.nix
-    ./floaterm.nix
+    ./toggleterm.nix
     ./lazygit.nix
     ./startify.nix
     ./noice.nix
