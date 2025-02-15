@@ -9,6 +9,7 @@
       # Python packages
       (python3.withPackages (pypkgs: with pypkgs; [
         pip
+        requests
         setuptools
         matplotlib
         numpy
@@ -16,6 +17,7 @@
         jinja2
         types-jinja2
         types-pyyaml
+        types-requests
         pyyaml
         flask
         junos-eznc
