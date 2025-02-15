@@ -13,6 +13,11 @@
         matplotlib
         numpy
         torch
+        jinja2
+        types-jinja2
+        pyyaml
+        flask
+        junos-eznc
       ]))
 
       # Python tools for development
