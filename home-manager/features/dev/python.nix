@@ -25,7 +25,7 @@
         ]
       ))
 
-      mypy
+     # mypy
       python310Packages.junos-eznc
       python310Packages.jinja2
       python310Packages.types-jinja2
