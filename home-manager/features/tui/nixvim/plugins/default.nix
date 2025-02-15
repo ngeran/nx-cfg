@@ -8,6 +8,8 @@
     ./which-key.nix
     ./markdown-preview.nix
     ./toggleterm.nix
+    ./lsp.nix
+    ./lualine.nix
   ];
 
 
