@@ -1,10 +1,10 @@
 {
   programs.nixvim = {
-    plugins.toggleterm = {
+    plugins.floaterm = {
       enable = true;
 
       settings = {
-       open_mapping = "[[<C-t>]]";
+       open_mapping = "[[<C-,>]]";
       };
     };
     
