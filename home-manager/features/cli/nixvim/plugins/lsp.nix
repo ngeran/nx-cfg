@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   programs.nixvim = {
     enable = true;
+    
     plugins = {
       lsp.enable = true;
       lsp.servers = {
