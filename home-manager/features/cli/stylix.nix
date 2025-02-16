@@ -1,88 +1,84 @@
 { pkgs, inputs, ... }: {
-  imports = [ inputs.stylix.homeManagerModules.stylix ];
+  imports = [ inputs.stylix.homeManagerModules.stylix ]; # Imports the Stylix Home Manager module
 
-  home.packages = with pkgs; [
-    dejavu_fonts
-    jetbrains-mono
-    noto-fonts
-    noto-fonts-emoji
-    font-awesome
-    powerline-fonts
-    powerline-symbols
-    nerd-fonts.symbols-only
-    nerd-fonts.meslo-lg
-    nerd-fonts.hack
-    nerd-fonts.fira-mono
+  home.packages = with pkgs; [ # Installs fonts and related tools
+    dejavu_fonts          # DejaVu fonts
+    jetbrains-mono       # JetBrains Mono font
+    noto-fonts           # Noto Sans and Serif fonts
+    noto-fonts-emoji     # Noto Color Emoji font
+    font-awesome         # Font Awesome icons
+    powerline-fonts      # Powerline fonts
+    powerline-symbols    # Powerline symbols
+    nerd-fonts.symbols-only # Nerd Fonts symbols only
+    nerd-fonts.meslo-lg  # Meslo LG Nerd Font
+    nerd-fonts.hack      # Hack Nerd Font
+    nerd-fonts.fira-mono # Fira Mono Nerd Font
   ];
 
   stylix = {
-    enable = true;
-    polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    enable = true; # Enables Stylix
 
+    polarity = "dark"; # Sets the overall theme polarity to dark
 
-    opacity = {
-      applications = 1.0;
-      terminal = 0.8;
-      desktop = 1.0;
-      popups = 1.0;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
+
+    opacity = { # Configures opacity for different elements
+      applications = 1.0; # Opacity for general applications
+      terminal = 0.8;    # Opacity for the terminal
+      desktop = 1.0;    # Opacity for the desktop
+      popups = 1.0;     # Opacity for pop-up windows
     };
 
-    targets = {
-      firefox.enable = true; 
-      alacritty.enable = true;
-      neovim.enable = false;
-      waybar.enable = false;
-      wofi.enable = false;
-      hyprland.enable = false;
-      hyprlock.enable = false;
+    targets = { # Enables Stylix for specific applications
+      firefox.enable = true; # Enables Stylix for Firefox
+      alacritty.enable = true; # Enables Stylix for Alacritty
+      neovim.enable = false; # Disables Stylix for Neovim (important!)
+      waybar.enable = false; # Disables Stylix for Waybar
+      wofi.enable = false;  # Disables Stylix for Wofi
+      hyprland.enable = false; # Disables Stylix for Hyprland
+      hyprlock.enable = false; # Disables Stylix for Hyprlock
     };
 
-    cursor = {
-      name = "DMZ-Black";
-      size = 24;
-      package = pkgs.vanilla-dmz;
+    cursor = { # Configures the cursor
+      name = "DMZ-Black"; # Cursor name
+      size = 24;          # Cursor size
+      package = pkgs.vanilla-dmz; # Package providing the cursor theme
     };
 
-    fonts = {
+    fonts = { # Configures fonts
       emoji = {
-        name = "Noto Color Emoji";
-        package = pkgs.noto-fonts-color-emoji;
+        name = "Noto Color Emoji"; # Emoji font name
+        package = pkgs.noto-fonts-color-emoji; # Package providing the emoji font
       };
       monospace = {
-        name = "JetBrains Mono";
-        package = pkgs.jetbrains-mono;
+        name = "JetBrains Mono"; # Monospace font name
+        package = pkgs.jetbrains-mono; # Package providing the monospace font
       };
       sansSerif = {
-        name = "Noto Sans";
-        package = pkgs.noto-fonts;
+        name = "Noto Sans"; # Sans-serif font name
+        package = pkgs.noto-fonts; # Package providing the sans-serif font
       };
       serif = {
-        name = "Noto Serif";
-        package = pkgs.noto-fonts;
+        name = "Noto Serif"; # Serif font name
+        package = pkgs.noto-fonts; # Package providing the serif font
       };
 
-      sizes = {
-        terminal = 13;
-        applications = 11;
+      sizes = { # Font sizes for different elements
+        terminal = 13;   # Font size for the terminal
+        applications = 11; # Font size for general applications
       };
     };
 
-    iconTheme = {
-      enable = true;
-      package = pkgs.adwaita-icon-theme;
-      dark = "Papirus-Dark";
-      light = "Papirus-Light";
+    iconTheme = { # Configures the icon theme
+      enable = true; # Enables the icon theme
+      package = pkgs.adwaita-icon-theme; # Package providing the icon theme
+      dark = "Papirus-Dark";  # Dark icon theme
+      light = "Papirus-Light"; # Light icon theme
     };
-     
-    # Set Local Background Image
-    #image = ./Pictures/wallpapers/gruvbox-dark-blue.png;
-    # Set Background Image from the Internet
-     image = pkgs.fetchurl {
-     url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-     sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
 
+    image = pkgs.fetchurl { # Sets the background image (from the internet)
+      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png"; # URL of the background image
+      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc"; # SHA256 hash for verification
     };
   };
 }
-
