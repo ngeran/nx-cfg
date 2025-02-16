@@ -66,21 +66,21 @@
             enable = true;
             settings = {
               plugins = {
-                jedi_completion.fuzzy = true;
-                pylsp_mypy.enabled = true;
-                junos-eznc.enable = true;
-                jinja2.enable = true;
+                #jedi_completion.fuzzy = true;
+                #pylsp_mypy.enabled = true;
+                #junos-eznc.enable = true;
+                #jinja2.enable = true;
                 # Disabling redundant linters
-                autopep8.enabled = false;
-                flake8.enabled = false;
-                mccabe.enabled = false;
-                preload.enabled = false;
-                pycodestyle.enabled = false;
-                pydocstyle.enabled = false;
-                pyflakes.enabled = false;
-                pylint.enabled = false;
-                ruff.enabled = false;
-                yapf.enabled = false;
+                #autopep8.enabled = false;
+                #flake8.enabled = false;
+                #mccabe.enabled = false;
+                #preload.enabled = false;
+                #pycodestyle.enabled = false;
+                #pydocstyle.enabled = false;
+                #pyflakes.enabled = false;
+                #pylint.enabled = false;
+                #ruff.enabled = false;
+                #yapf.enabled = false;
               };
             };
           };
