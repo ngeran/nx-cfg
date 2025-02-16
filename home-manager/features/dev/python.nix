@@ -21,7 +21,6 @@
         pyyaml
         flask
         junos-eznc
-        # Python tools for development
         mypy
       ]))
 
