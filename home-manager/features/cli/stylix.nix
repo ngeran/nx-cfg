@@ -24,6 +24,7 @@
           method = "wal"; # wal, average, prominent
         };
       };
+       };
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
