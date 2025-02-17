@@ -18,14 +18,6 @@
   stylix = {
     enable = true; # Enables Stylix
 
-       settings = {  # <--- This is the crucial part!
-      colors = {
-        generation = {
-          method = "wal"; # wal, average, prominent
-        };
-      };
-       };
-
     polarity = "dark"; # Sets the overall theme polarity to dark
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
