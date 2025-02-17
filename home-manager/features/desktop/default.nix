@@ -1,6 +1,5 @@
 {
   imports = [
-    ./fish
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
