@@ -21,12 +21,12 @@ in {
       notification-warning-fg = "${colors.on_error}";
       highlight-color = "${colors.tertiary}";
       highlight-active-color = "${colors.secondary}";
-      completion-bg = "${colors.surface_bright}";
-      completion-fg = "${colors.on_surface}";
-      completions-highlight-bg = "${colors.secondary}";
-      completions-highlight-fg = "${colors.on_secondary}";
-      recolor-lightcolor = "${colors.surface}";
-      recolor-darkcolor = "${colors.inverse_surface}";
+      #completion-bg = "${colors.surface_bright}";
+      #completion-fg = "${colors.on_surface}";
+      #completions-highlight-bg = "${colors.secondary}";
+      #completions-highlight-fg = "${colors.on_secondary}";
+      #recolor-lightcolor = "${colors.surface}";
+      #recolor-darkcolor = "${colors.inverse_surface}";
     };
   };
 }
