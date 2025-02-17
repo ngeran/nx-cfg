@@ -18,11 +18,12 @@
   stylix = {
     enable = true; # Enables Stylix
 
-       colors = {  # Correct placement of the colors option
-      generation = {
-        method = "wal"; # wal, average, prominent
+       settings = {  # <--- This is the crucial part!
+      colors = {
+        generation = {
+          method = "wal"; # wal, average, prominent
+        };
       };
-    };
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
