@@ -1,9 +1,10 @@
 {
-  virtualisation.docker = {
-    enable = true;
-    users.users.nikos = {
+  # Enable Docker
+  virtualisation.docker.enable = true;
+
+  # Define the user 'nikos'
+  users.users.nikos = {
     isNormalUser = true;
     extraGroups = [ "docker" ]; # Add to docker group
   };
-}
 }
