@@ -6,3 +6,4 @@
     extraGroups = [ "docker" ]; # Add to docker group
   };
 }
+}
