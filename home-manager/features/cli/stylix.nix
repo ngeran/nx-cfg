@@ -37,7 +37,7 @@
       wofi.enable = false;  # Disables Stylix for Wofi
       hyprland.enable = false; # Disables Stylix for Hyprland
       hyprlock.enable = false; # Disables Stylix for Hyprlock
-      nvim.enable = false; # Disables Stylix for nvim
+      nixvim.enable = false; # Disables Stylix for nixvim
     };
 
     cursor = { # Configures the cursor
