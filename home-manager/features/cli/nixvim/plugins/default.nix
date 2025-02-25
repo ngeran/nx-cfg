@@ -22,10 +22,11 @@
     ./noice.nix         # Notification plugin
     ./which-key.nix     # Keybinding hints plugin
     ./snacks.nix        # Snippet plugin (consider combining with luasnip)
+    ./theme.nix
   ]; # Imports configuration files for various plugins
 
   programs.nixvim = {
-    colorschemes.gruvbox.enable = true; # Enables the Gruvbox colorscheme
+    #colorschemes.gruvbox.enable = true; # Enables the Gruvbox colorscheme
 
     plugins = {
       # Lazy loading (consider using `lazy.nvim` directly for more control)
