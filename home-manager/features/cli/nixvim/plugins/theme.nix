@@ -1,6 +1,7 @@
 { ... }:
 {
-  colorschemes.catppuccin = {
+    programs.nixvim = {
+        colorschemes.catppuccin = {
     settings = {
       default_integrations = true;
       flavour = "macchiato";
@@ -38,4 +39,5 @@
       };
     };
   };
+    };
 }
