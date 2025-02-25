@@ -22,7 +22,7 @@
     ./noice.nix         # Notification plugin
     ./which-key.nix     # Keybinding hints plugin
     ./snacks.nix        # Snippet plugin (consider combining with luasnip)
-    ./theme.nix
+    ./theme-gruvbox.nix # gruvbox theme
   ]; # Imports configuration files for various plugins
 
   programs.nixvim = {
