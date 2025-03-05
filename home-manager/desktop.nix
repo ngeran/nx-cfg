@@ -19,7 +19,7 @@
         ];
 
   # Color Scheme
-  #  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-hard;
+  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-hard;
 
   home.stateVersion = "24.11";
 
