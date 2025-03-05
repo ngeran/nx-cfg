@@ -8,7 +8,6 @@
           stylix.url = "github:danth/stylix";
           nix-colors.url = "github:misterio77/nix-colors";
           nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-          
           #===[NIXVIM]===
           nixvim = {
             url = "github:nix-community/nixvim";
@@ -19,7 +18,7 @@
 	         url = "github:hyprwm/hyprland-plugins";
 	         inputs.hyprland.follows = "hyprland";
            };
-           #===[HOME MANAGER]===        
+           #===[HOME MANAGER]===
           home-manager = {
              url = "github:nix-community/home-manager";
              inputs.nixpkgs.follows = "nixpkgs";
@@ -33,10 +32,10 @@
        lib = nixpkgs.lib // home-manager.lib;
        system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
-        user = "nikos"; 
+        user = "nikos";
 		in
 		{
-         inherit lib; 
+         inherit lib;
 		   # ===[NixOs Configuratation]===
 		   nixosConfigurations = {
          # ELITEDESK ===[Mini Workstation]===
@@ -56,7 +55,7 @@
                      specialArgs = {inherit inputs outputs system;};
                      modules = [./hosts/vmware/configuration.nix inputs.stylix.nixosModules.stylix];
                      };
-                     
+
           # MACBOOK===[MACBOOK INSTALLATION]===
          macbook = lib.nixosSystem {
                      specialArgs = {inherit inputs outputs system;};
@@ -64,17 +63,17 @@
                      };
 
       };
-                  
+
          # ===[Home Manager Configuration]===
          homeConfigurations = {
-         # ELITEDESK ===[Mini Workstation]===         
+         # ELITEDESK ===[Mini Workstation]===
          "nikos@elitedesk" = lib.homeManagerConfiguration {
                      pkgs = nixpkgs.legacyPackages.${system};
                      extraSpecialArgs = {inherit inputs;};
                      modules = [./home-manager/elitedesk.nix];
                   };
 
-         # DESKTOP ===[Main Workstation]===         
+         # DESKTOP ===[Main Workstation]===
          "nikos@desktop" =  lib.homeManagerConfiguration {
                      pkgs = nixpkgs.legacyPackages.${system};
                      extraSpecialArgs = {inherit inputs;};
@@ -82,14 +81,14 @@
                   };
 
           #VMWARE ===[VMWARE Workstation]===
-         "nikos@vmware" = lib.homeManagerConfiguration {          
+         "nikos@vmware" = lib.homeManagerConfiguration {
 	                  pkgs = nixpkgs.legacyPackages.${system};
                      extraSpecialArgs = { inherit inputs outputs;};
                      modules = [ ./home-manager/vmware.nix ];
                    };
 
          #MACBOOK ===[MACBOOK Laptop]===
-         "nikos@macbook" = lib.homeManagerConfiguration {          
+         "nikos@macbook" = lib.homeManagerConfiguration {
 	                  pkgs = nixpkgs.legacyPackages.${system};
                      extraSpecialArgs = { inherit inputs outputs;};
                      modules = [ ./home-manager/macbook.nix ];
