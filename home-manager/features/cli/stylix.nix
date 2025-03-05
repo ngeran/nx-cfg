@@ -20,8 +20,8 @@
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
-
+    #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
+    base16Scheme = "gruvbox-dark-hard";
     opacity = { # Configures opacity for different elements
       applications = 1.0; # Opacity for general applications
       terminal = 0.8;    # Opacity for the terminal
