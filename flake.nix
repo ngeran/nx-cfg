@@ -26,7 +26,7 @@
 	};
 
 
-	outputs = { self, nixpkgs, home-manager, nixos-hardware, ...}@inputs:
+	outputs = { self, nixpkgs, home-manager, nixos-hardware, stylix, ...}@inputs:
 		let
        inherit (self) outputs;
        lib = nixpkgs.lib // home-manager.lib;
