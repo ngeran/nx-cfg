@@ -21,12 +21,13 @@
       ../common/optional/docker.nix
       #../common/optional/wireguard
     ];
+  stylix.enable = false;  # Disable Stylix explicitly
 
-  # Automatic updating 
+  # Automatic updating
   system.autoUpgrade.enable = true;
   system.autoUpgrade.dates = "weekly";
 
-  # Automatic Cleanup 
+  # Automatic Cleanup
   nix.gc.automatic = true;
   nix.gc.dates = "daily";
   nix.gc.options = "--delete-older-than 10d";
@@ -39,17 +40,16 @@
 
 
   # Define your hostname.
-  networking.hostName = "desktop"; 
-  
+  networking.hostName = "desktop";
    # AMD Graphcs
     hardware.graphics = {
     enable = true;
-    enable32Bit = true; 
+    enable32Bit = true;
    };
-   # AMD OpenCL 
+   # AMD OpenCL
   hardware.amdgpu.opencl.enable = true;
 
-  # Hyprland Configuration 
+  # Hyprland Configuration
   programs.hyprland = {
     enable = true;
     # set the flake package
@@ -100,7 +100,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # vim 
+    # vim
     # wget
     # git
   ];
@@ -126,7 +126,7 @@
   )
  ];
 
-  # Power Management 
+  # Power Management
   powerManagement.powertop.enable = true;
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
