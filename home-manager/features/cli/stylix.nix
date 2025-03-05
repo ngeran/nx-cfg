@@ -20,7 +20,8 @@
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
+    base16Scheme = pkgs.base16-schemes + "/share/themes/gruvbox-dark-hard.yaml";
+    #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
 
     opacity = { # Configures opacity for different elements
       applications = 1.0; # Opacity for general applications
@@ -85,7 +86,7 @@
      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-blue.png";
      sha256 = "1jrmdhlcnmqkrdzylpq6kv9m3qsl317af3g66wf9lm3mz6xd6dzs";
      #Astronaut
-     
+
     };
   };
 }
