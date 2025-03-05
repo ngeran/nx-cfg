@@ -20,7 +20,6 @@
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
-    base16Scheme = pkgs.base16-schemes + "/share/themes/gruvbox-dark-hard.yaml";
     #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
 
     opacity = { # Configures opacity for different elements
