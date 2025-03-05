@@ -7,7 +7,7 @@
      ./qt.nix
      ./ranger.nix
      ./starship.nix
-    #     ./stylix.nix
+     ./stylix.nix
      ./tmux.nix
      ./nixvim
   ];
