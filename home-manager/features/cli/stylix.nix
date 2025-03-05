@@ -20,7 +20,7 @@
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
-    #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml"; # Sets the base16 color scheme to Gruvbox Dark Hard
+    #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     base16Scheme = "gruvbox-dark-hard";
     opacity = { # Configures opacity for different elements
       applications = 1.0; # Opacity for general applications
@@ -79,11 +79,11 @@
 
     image = pkgs.fetchurl { # Sets the background image (from the internet)
      # Rainbow
-     # url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png"; # URL of the background image
-     # sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc"; # SHA256 hash for verification
+     url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png"; # URL of the background image
+     sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc"; # SHA256 hash for verification
      # Blue
-     url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-blue.png";
-     sha256 = "1jrmdhlcnmqkrdzylpq6kv9m3qsl317af3g66wf9lm3mz6xd6dzs";
+      #url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-blue.png";
+      #sha256 = "1jrmdhlcnmqkrdzylpq6kv9m3qsl317af3g66wf9lm3mz6xd6dzs";
      #Astronaut
 
     };
