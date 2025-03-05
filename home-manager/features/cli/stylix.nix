@@ -20,25 +20,8 @@
 
     polarity = "dark"; # Sets the overall theme polarity to dark
 
-    #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    stylix.base16Scheme = {
-    base00 = "1d2526"; # Background
-    base01 = "2e3436"; # Lighter background
-    base02 = "555753"; # Selection background
-    base03 = "888a85"; # Comments
-    base04 = "babdb6"; # Dark foreground
-    base05 = "eeeeec"; # Default foreground
-    base06 = "f5f6f5"; # Light foreground
-    base07 = "ffffff"; # Light background
-    base08 = "ef2929"; # Red
-    base09 = "f57900"; # Orange
-    base0A = "fce94f"; # Yellow
-    base0B = "8ae234"; # Green
-    base0C = "34e2e2"; # Cyan
-    base0D = "729fcf"; # Blue
-    base0E = "ad7fa8"; # Purple
-    base0F = "cc0000"; # Brown
-    };
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+
     opacity = { # Configures opacity for different elements
       applications = 1.0; # Opacity for general applications
       terminal = 0.8;    # Opacity for the terminal
