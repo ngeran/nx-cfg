@@ -47,7 +47,7 @@
          # DESKTOP ===[Main Workstation]===
          desktop = lib.nixosSystem {
                      specialArgs = {inherit inputs outputs system;};
-                     modules = [./hosts/desktop/configuration.nix ];
+                     modules = [./hosts/desktop/configuration.nix inputs.stylix.nixosModules.stylix];
 		              };
 
          # VMWARE===[VMWARE INSTALLATION]===
