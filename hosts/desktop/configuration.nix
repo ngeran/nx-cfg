@@ -21,7 +21,6 @@
       ../common/optional/docker.nix
       #../common/optional/wireguard
     ];
-  stylix.enable = false;  # Disable Stylix explicitly
 
   # Automatic updating
   system.autoUpgrade.enable = true;
