@@ -23,8 +23,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Define your hostname.
-  networking.hostName = "elitedesk"; 
-  
+  networking.hostName = "elitedesk";
+
    # Intel Graphcs
     hardware.graphics = {
     enable = true;
@@ -36,7 +36,7 @@
     ];
    };
 
-  # Hyprland Configuration 
+  # Hyprland Configuration
   programs.hyprland = {
     enable = true;
     # set the flake package
@@ -86,16 +86,16 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # vim 
+    # vim
     # wget
     # git
   ];
 
-  # Power Management 
+  # Power Management
   powerManagement.powertop.enable = true;
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  # Enable zsh 
+  # Enable zsh
   programs.zsh.enable = true;
 
   system.stateVersion = "24.11"; # Did you read the comment?

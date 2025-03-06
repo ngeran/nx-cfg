@@ -5,7 +5,7 @@
   # manage.
   home.username = "nikos";
   home.homeDirectory = "/home/nikos";
-  
+
   imports = [
        ./features/cli
        ./features/dev
@@ -20,8 +20,8 @@
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-hard;
 
   home.stateVersion = "24.11";
-  
-  # Packages 
+
+  # Packages
   home.packages = [
   ];
 
@@ -45,8 +45,8 @@
       width = 3440;
       height = 1440;
       refreshRate = 120;
-      x = 0; 
-      y = 0; 
+      x = 0;
+      y = 0;
       enabled = true;
     }
     # Add more monitors as needed
