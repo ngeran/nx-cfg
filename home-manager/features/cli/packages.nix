@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  # This will allow packages that are not free to 
+  # This will allow packages that are not free to
   # be installed
   nixpkgs.config.allowUnfree = true;
 
@@ -9,13 +9,11 @@
      inkscape-with-extensions
      krita
      kicad
-     dropbox
      obsidian
-     helix
      vlc
      # CLI utils
      tree
-     bash-completion 
+     bash-completion
     # Coding stuff
      nodejs
      gnumake
@@ -29,12 +27,11 @@
     # Other
     bat
     tailwindcss
-    #Automation 
+    #Automation
     opentofu
-    #Image 
+    #Image
     imagemagick
     #browser
     tor-browser
   ];
 }
-
